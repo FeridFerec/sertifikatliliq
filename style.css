@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.CD{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#OG{
+    background-color: greenyellow;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+input{
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.box #but{
+    position: relative;
+    margin-top: 80px;
+    padding: 5px 12px;
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+}
+.box .img{
+    width: 200px;
+    height: 200px;
+}
+.box .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}

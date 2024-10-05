@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* From Uiverse.io by DaniloMGutavo */ 
+
+.Contaninho{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Contaninho p {
+    width: 450px;
+}
+.Contaninho .Btt{
+    width: 450px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.Btt1{
+   display: flex;
+   align-items: center;
+   
+}
+.Btt1 p {
+    position: relative;
+    margin-top: 10px;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+.Btt2{
+   display: flex;
+   align-items: center;
+   
+}
+.Btt2 p {
+    position: relative;
+    margin-top: 10px;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+#SubmitM{
+    padding: 6px 12px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#SubmitM:hover{
+    background-color: darkgreen;
+}
+.ErrACC{
+    z-index: 10;
+    background: #2196F3;
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.ErrACC p {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.boxer{
+  width: 25px;
+  cursor: pointer;
+  height: 25px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxer1{
+  width: 25px;
+  cursor: pointer;
+  height: 25px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AccACC{
+    z-index: 10;
+    background: #2196F3;
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.AccACC p {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.AccACC button{
+    cursor: pointer;
+    padding: 6px 12px;
+    background-color: grey;
+    border: none;
+    color: white;
+}
+.ErrACC button{
+    cursor: pointer;
+    padding: 6px 12px;
+    background-color: grey;
+    border: none;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    .Btt {
+        width: 100%; /* Genişliği %100 yap */
+    }
+
+    #SubmitM {
+        width: 100%; /* Düğmeyi tam genişlik yap */
+    }
+    .ErrACC, .AccACC {
+        width: 90%; /* Popup genişliği %90 yap */
+        max-width: 350px; /* Maksimum genişlik */
+    }
+
+    .Contaninho p {
+        font-size: 16px; /* Metin boyutunu küçült */
+    }
+
+    .Btt1 p, .Btt2 p {
+        font-size: 16px; /* Metin boyutunu küçült */
+    }
+}
